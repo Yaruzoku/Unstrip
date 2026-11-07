@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "unstrip",
+	"version": "${version}",
+	"name": "Unstrip",
+	"description": "Because accidentally stripping a log is annoying.",
+	"authors": [
+		"Yaruzoku"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Yaruzoku/Unstrip",
+		"issues": "https://github.com/Yaruzoku/Unstrip/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/unstrip/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yaru.unstrip.Unstrip"
+		],
+		"client": [
+			"com.yaru.unstrip.client.UnstripClient"
+		]
+	},
+	"mixins": [
+		"unstrip.mixins.json",
+		{
+			"config": "unstrip.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
