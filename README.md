@@ -10,6 +10,3 @@ A simple client-side Minecraft mod that prevents accidental log stripping.
 
 ### Installation
 Requires Fabric Loader and Fabric API.
-
-Place the Unstrip JAR into your Minecraft `mods` folder and launch the game.
-
